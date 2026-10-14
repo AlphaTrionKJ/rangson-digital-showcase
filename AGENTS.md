@@ -8,3 +8,9 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Website architecture
+- Keep the company presentation as a single anchored catalog at `/`; the source material is one cohesive document.
+- Store source-derived text in `src/data/catalog.json` and original image references in `src/data/assets.json`; this keeps source verification independent of presentation.
+- Serve extracted original media through Lovable Assets pointers in `src/assets`; this preserves original artwork without committing binary media.
+- Keep catalog presentation and accessible image viewing in focused components, with semantic visual tokens in `src/styles.css`; this maintains consistent styling and interaction.
