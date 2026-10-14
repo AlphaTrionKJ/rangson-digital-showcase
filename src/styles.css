@@ -188,10 +188,10 @@ footer a { border: 1px solid color-mix(in oklab,var(--primary-foreground) 30%,tr
  .mobile-toggle { display: inline-flex; }
  .mobile-nav { display: grid; padding: 15px 20px 25px; border-bottom: 1px solid var(--border); animation: entrance .3s; }
  .mobile-nav a { display: flex; justify-content: space-between; padding: 17px 0; font-size: 16px; border-bottom: 1px solid var(--border); }
- .opening-title { padding: 30px 0; align-items: end; }
+ .opening-title { position: relative; display: block; padding: 30px 0; }
  .opening-title h1 { font-size: 56px; line-height: 1.02; }
  .opening-title h1 span { display: block; }
- .round-arrow { width: 43px; height: 43px; margin-bottom: 4px; }
+ .round-arrow { position: absolute; right: 0; top: 33px; width: 43px; height: 43px; }
  .about-grid { grid-template-columns: 1fr; gap: 32px; padding-top: 4px; padding-bottom: 28px; }
  .ceo-figure { width: 100%; max-width: none; }
  .ceo-figure .catalog-image { height: 330px; aspect-ratio: auto; background: var(--secondary); }
@@ -244,9 +244,9 @@ footer a { border: 1px solid color-mix(in oklab,var(--primary-foreground) 30%,tr
  .contact-grid > p { font-size: 14px; }
  .contact-grid dl > div { grid-template-columns: 62px 1fr; gap: 10px; }
  .contact-grid dd { font-size: 12px; }
- footer { min-height: 95px; }
+ footer { min-height: 95px; flex-wrap: wrap; padding-top: 20px; }
  footer img { width: 118px; }
- footer > span { display: none; }
+ footer > span { display: block; order: 3; width: 100%; text-align: center; padding-bottom: 20px; }
  .lightbox { padding: 15px; width: calc(100% - 24px); }
  .lightbox-bar h2 { font-size: 12px; }
 }
